@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opciones y Respuestas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Bingo de la Persona</h1>
+
+    </header>
+
+    <div class="container">
+        <!-- Genera 24 recuadros -->
+        <div class="box" onclick="showQuestion(0)">Opción 1</div>
+        <div class="box" onclick="showQuestion(1)">Opción 2</div>
+        <div class="box" onclick="showQuestion(2)">Opción 3</div>
+        <div class="box" onclick="showQuestion(3)">Opción 4</div>
+        <div class="box" onclick="showQuestion(4)">Opción 5</div>
+        <div class="box" onclick="showQuestion(5)">Opción 6</div>
+        <div class="box" onclick="showQuestion(6)">Opción 7</div>
+        <div class="box" onclick="showQuestion(7)">Opción 8</div>
+        <div class="box" onclick="showQuestion(8)">Opción 9</div>
+        <div class="box" onclick="showQuestion(9)">Opción 10</div>
+        <div class="box" onclick="showQuestion(10)">Opción 11</div>
+        <div class="box" onclick="showQuestion(11)">Opción 12</div>
+        <div class="box" onclick="showQuestion(12)">Opción 13</div>
+        <div class="box" onclick="showQuestion(13)">Opción 14</div>
+        <div class="box" onclick="showQuestion(14)">Opción 15</div>
+        <div class="box" onclick="showQuestion(15)">Opción 16</div>
+        <div class="box" onclick="showQuestion(16)">Opción 17</div>
+        <div class="box" onclick="showQuestion(17)">Opción 18</div>
+        <div class="box" onclick="showQuestion(18)">Opción 19</div>
+        <div class="box" onclick="showQuestion(19)">Opción 20</div>
+        <div class="box" onclick="showQuestion(20)">Opción 21</div>
+        <div class="box" onclick="showQuestion(21)">Opción 22</div>
+        <div class="box" onclick="showQuestion(22)">Opción 23</div>
+        <div class="box" onclick="showQuestion(23)">Opción 24</div>
+    </div>
+
+    <!-- Modal para mostrar opciones y respuesta -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="options"></div>
+            <button onclick="showAnswer()">Ver Respuesta</button>
+            <p id="answer" style="display:none;"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
